@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Patel — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Aditya Patel — B.Tech CSE 2nd Year student, frontend developer, and competitive programmer."
+    />
+    <meta
+      name="keywords"
+      content="Aditya Patel, Portfolio, Frontend Developer, CSE, B.Tech, Competitive Programmer"
+    />
+    <meta name="author" content="Aditya Patel" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ CURSOR GLOW ============ -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AP<span class="logo-bracket">
+          /&gt;</span
+        >
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ============ MOBILE MENU ============ -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="hero-content">
+        <div class="hero-badge animate-on-scroll">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title animate-on-scroll">
+          Hi, I'm <span class="gradient-text">Aditya Patel</span>
+        </h1>
+        <p class="hero-subtitle animate-on-scroll">
+          <span class="typewriter" id="typewriter"></span
+          ><span class="typewriter-cursor">|</span>
+        </p>
+        <p class="hero-description animate-on-scroll">
+          B.Tech CSE 2nd Year student passionate about building beautiful web
+          experiences, solving algorithmic challenges, and crafting clean,
+          efficient code.
+        </p>
+        <div class="hero-actions animate-on-scroll">
+          <a
+            href="https://github.com/adityapatel9950/"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="ph ph-github-logo"></i> View GitHub
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="ph ph-envelope-simple"></i> Get in Touch
+          </a>
+        </div>
+        <div class="hero-socials animate-on-scroll">
+          <a
+            href="https://github.com/adityapatel9950/"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            aria-label="GitHub"
+          >
+            <i class="ph ph-github-logo"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adityapatel-cs/"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="ph ph-linkedin-logo"></i>
+          </a>
+          <a
+            href="https://leetcode.com/u/adityapatel-cs/"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            aria-label="LeetCode"
+          >
+            <svg
+              class="social-svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="20"
+              height="20"
+            >
+              <path
+                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://x.com/adityypatel/"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            aria-label="X / Twitter"
+          >
+            <svg
+              class="social-svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="20"
+              height="20"
+            >
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/adityypatel/"
+            target="_blank"
+            rel="noopener"
+            class="social-icon"
+            aria-label="Instagram"
+          >
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator animate-on-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-label animate-on-scroll">
+          <span class="label-number">01.</span> About Me
+        </h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3 class="about-heading animate-on-scroll">
+              Turning ideas into
+              <span class="gradient-text">digital reality</span>
+            </h3>
+            <p class="animate-on-scroll">
+              I'm a second-year Computer Science student who fell in love with
+              the intersection of design and code. I enjoy building responsive,
+              performant, and accessible web applications that make a real
+              impact.
+            </p>
+            <p class="animate-on-scroll">
+              When I'm not coding, you'll find me grinding LeetCode, exploring
+              new frameworks, or contributing to open-source projects on GitHub.
+              I believe in continuous learning and pushing boundaries every
+              single day.
+            </p>
+            <div class="about-stats animate-on-scroll">
+              <div class="stat-card">
+                <span class="stat-number" data-target="10">0</span
+                ><span class="stat-suffix">+</span>
+                <span class="stat-label">LeetCode Problems</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="5">0</span
+                ><span class="stat-suffix">+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="10">0</span
+                ><span class="stat-suffix">+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image animate-on-scroll">
+            <div class="image-frame">
+              <img src="aditya.jpg" alt="Aditya Patel" class="about-photo" />
+              <div class="image-decoration"></div>
+              <div class="image-decoration-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-label animate-on-scroll">
+          <span class="label-number">02.</span> Skills & Tech
+        </h2>
+        <h3 class="section-heading animate-on-scroll">
+          Technologies I work with
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #e44d26">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#E44D26"
+                  d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
+                />
+                <path
+                  fill="#F16529"
+                  d="M64 116.8l36.378-10.086 8.559-95.878H64z"
+                />
+                <path
+                  fill="#EBEBEB"
+                  d="M64 52.455H45.788L44.53 38.361H64V24.599H29.035l.338 3.779 3.467 38.852H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
+                />
+                <path
+                  fill="#fff"
+                  d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.338-3.692z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">HTML5</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #1572b6">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#1572B6"
+                  d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543z"
+                />
+                <path
+                  fill="#33A9DC"
+                  d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16z"
+                />
+                <path
+                  fill="#fff"
+                  d="M64.001 51.429h18.302l1.264-14.163H64.001V24.166h34.682l-.332 3.711-3.4 38.114H64.001z"
+                />
+                <path
+                  fill="#EBEBEB"
+                  d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018z"
+                />
+                <path
+                  fill="#fff"
+                  d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881z"
+                />
+                <path
+                  fill="#EBEBEB"
+                  d="M64.048 24.166v13.1H30.64l-.277-3.108-.633-7.083-.337-2.909zm-.047 27.263v13.1H46.585l-.277-3.108-.634-7.083-.335-2.909z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">CSS3</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #f7df1e">
+              <svg viewBox="0 0 128 128">
+                <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
+                <path
+                  fill="#323330"
+                  d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.142-.39 1.216-3.544.36-8.58zM69.677 45.587H58.044c0 13.12-.043 26.131-.043 39.36 0 8.346.429 16.013-1.013 18.4-2.225 4.248-7.996 3.782-10.612 2.974-2.713-1.309-4.068-3.178-5.593-5.856-.442-.762-.796-1.368-.858-1.405l-9.354 5.767c1.548 3.261 3.833 6.088 6.88 7.926 4.525 2.761 10.589 3.643 17.017 2.211 4.167-1.202 7.757-3.773 9.594-7.593 2.668-4.966 2.095-11.057 2.07-17.873.066-13.228 0-26.441 0-39.916z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #61dafb">
+              <svg viewBox="0 0 128 128">
+                <g fill="#61DAFB">
+                  <circle cx="64" cy="64" r="11.4" />
+                  <path
+                    d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2 2.3-4.1 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.1 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2-2.3 4.1-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <span class="skill-name">React</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #339933">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#339933"
+                  d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623c-.712 0-2.306 1.061-2.306 1.774v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.71 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645 1.06 1.272 1.06h5.731c.355 0 .697-.269.949-.465.254-.197.46-.477.396-.876-1.254-10.733-10.064-15.69-22.19-15.69-12.736 0-20.321 5.357-20.321 14.329 0 9.724 7.521 12.425 19.668 13.627 14.574 1.398 15.596 3.452 15.596 6.248 0 4.821-3.867 6.876-12.964 6.876z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">Node.js</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #3178c6">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#3178C6"
+                  d="M2 63.91v62.5h125v-125H2zm100.73-5.01h-23.5v68.18h-13.63V58.9H42.1V47.71h60.63z"
+                />
+                <path
+                  fill="#3178C6"
+                  d="M75.27 113.28V97.23c0-.6 0-1.19.06-1.79a4.92 4.92 0 01.66-2.18 3.24 3.24 0 013.05-1.72c2.15 0 3.37 1.28 3.77 3.84.06.46.06.93.06 1.39v16.51h12.36V94.8a17.64 17.64 0 00-1.06-6.82 10.44 10.44 0 00-6.54-6.35 16.6 16.6 0 00-5.66-.93 12.83 12.83 0 00-6.84 1.73A11.79 11.79 0 0070.71 87v-1.59H58.41v27.87z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">TypeScript</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #764abc">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#764ABC"
+                  d="M88.69 88.11c-9 18.4-24.76 30.78-45.61 34.85a57.57 57.57 0 01-2.88.4c-.42.05-.82.15-1.24.15a57.44 57.44 0 01-7.07-.43 59.43 59.43 0 01-7.37-1.44A57.13 57.13 0 0164 .5a57.44 57.44 0 0145.31 22.11 57.94 57.94 0 0110 25.19c.05.29.15.58.2.88.22 1 .42 2 .56 3.07.27 1.87.46 3.77.56 5.68a57.64 57.64 0 01-31.94 30.68z"
+                />
+                <path
+                  fill="#764ABC"
+                  d="M102.7 64a38.22 38.22 0 00-4.26-17.38 37.49 37.49 0 00-30.53-19.3 38 38 0 00-22.74 4.81A37.49 37.49 0 0025.83 64a38.22 38.22 0 004.26 17.38 37.49 37.49 0 0030.53 19.3 38 38 0 0022.74-4.81A37.49 37.49 0 00102.7 64z"
+                />
+                <path
+                  fill="#fff"
+                  d="M73.23 75.56l-4-7H55.71l-4 7h-8.78l22.06-37.83h.47l22.06 37.83zm-17.26-13h13.6l-6.84-12.08z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">DSA</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #06b6d4">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#06B6D4"
+                  d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.868 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.868 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">Tailwind</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #47a248">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  fill="#47A248"
+                  d="M90.491 57.282c-.37-4.79-1.896-9.44-4.548-13.276-2.706-3.918-6.403-6.9-10.955-8.726-2.457-.987-4.876-1.423-7.33-1.723-.127-.015-.257-.027-.384-.04l-.186-.02-.107.003c-.161-.002-.322-.008-.483-.01H64.06c-.158.002-.315.008-.474.01l-.106-.003-.187.02c-.127.013-.256.025-.383.04-2.455.3-4.874.736-7.331 1.723-4.552 1.826-8.25 4.808-10.955 8.726-2.652 3.836-4.177 8.486-4.547 13.276-.082 1.057-.085 2.133-.085 3.207v5.053c0 .158.003.318.007.477v.182l.012.345c.008.196.02.392.034.587.004.042.006.083.01.124.018.224.039.447.064.669.012.112.027.224.042.335.076.584.174 1.164.297 1.736.02.092.042.183.065.275.1.405.215.804.347 1.197.024.073.051.145.077.217.127.352.266.7.42 1.041.085.19.175.377.272.562.085.164.175.326.27.485l.023.038c.15.249.31.494.48.734.167.236.342.468.524.695.3.374.615.74.953 1.089.219.226.447.448.683.66.165.149.335.295.508.438.346.287.707.562 1.083.822.18.124.363.245.549.362.373.234.757.455 1.152.661.11.058.222.114.335.17.359.177.726.341 1.1.492.064.026.129.05.193.075.445.172.898.326 1.36.46l.13.04c.472.134.95.25 1.437.346.058.012.117.02.175.031.476.094.957.17 1.445.226.07.008.14.014.21.02.493.053.989.086 1.49.098.087.002.174.008.26.008h.059l.087-.003c.086 0 .173-.006.26-.008.501-.012.997-.045 1.49-.098.07-.006.14-.012.21-.02.488-.056.97-.132 1.445-.226.058-.011.117-.02.175-.031a14.75 14.75 0 001.437-.346l.13-.04c.462-.134.915-.288 1.36-.46.064-.025.129-.049.193-.075.374-.151.741-.315 1.1-.492.113-.056.224-.112.335-.17a13.93 13.93 0 001.152-.661c.186-.117.369-.238.549-.362.376-.26.737-.535 1.083-.822.173-.143.343-.289.508-.438.236-.213.464-.434.683-.66.338-.349.652-.715.953-1.089.182-.227.357-.459.524-.695.17-.24.33-.485.48-.734l.023-.038c.095-.159.185-.321.27-.485.097-.185.187-.372.272-.562.154-.342.293-.689.42-1.041.026-.072.053-.144.077-.217.132-.393.247-.792.347-1.197.023-.092.045-.183.065-.275a14.68 14.68 0 00.297-1.736c.015-.111.03-.223.042-.335.025-.222.046-.445.064-.669.004-.041.006-.082.01-.124.014-.195.026-.39.034-.587l.012-.345v-.182c.004-.159.007-.319.007-.477v-5.053c0-1.074-.003-2.15-.085-3.207zM64 88.126c-10.04 0-18.182-8.141-18.182-18.182S53.96 51.762 64 51.762s18.182 8.141 18.182 18.182S74.04 88.126 64 88.126z"
+                />
+                <path
+                  fill="#47A248"
+                  d="M64 0C28.654 0 0 28.654 0 64s28.654 64 64 64 64-28.654 64-64S99.346 0 64 0zm0 96.308c-14.498 0-26.364-11.866-26.364-26.364S49.502 43.58 64 43.58s26.364 11.866 26.364 26.364S78.498 96.308 64 96.308z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">MongoDB</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #f24e1e">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#0ACF83"
+                  d="M45.5 129c11.598 0 21-9.402 21-21V87H45.5C33.902 87 24.5 96.402 24.5 108s9.402 21 21 21z"
+                />
+                <path
+                  fill="#A259FF"
+                  d="M24.5 66c0-11.598 9.402-21 21-21h21v42h-21C33.902 87 24.5 77.598 24.5 66z"
+                />
+                <path
+                  fill="#F24E1E"
+                  d="M24.5 24c0-11.598 9.402-21 21-21h21v42h-21C33.902 45 24.5 35.598 24.5 24z"
+                />
+                <path
+                  fill="#FF7262"
+                  d="M66.5 3h21c11.598 0 21 9.402 21 21s-9.402 21-21 21h-21V3z"
+                />
+                <path
+                  fill="#1ABCFE"
+                  d="M108.5 66c0 11.598-9.402 21-21 21S66.5 77.598 66.5 66s9.402-21 21-21 21 9.402 21 21z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">Figma</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #f05032">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#F05032"
+                  d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">Git</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #306998">
+              <svg viewBox="0 0 128 128">
+                <linearGradient
+                  id="pyA"
+                  gradientUnits="userSpaceOnUse"
+                  x1="55.549"
+                  y1="46.544"
+                  x2="55.549"
+                  y2="105.869"
+                  gradientTransform="matrix(1 0 0 -1 0 128)"
+                >
+                  <stop offset="0" stop-color="#387EB8" />
+                  <stop offset="1" stop-color="#366994" />
+                </linearGradient>
+                <path
+                  fill="url(#pyA)"
+                  d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.836-4.244-.706-8.645-1.027-12.866-1.009zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"
+                />
+                <linearGradient
+                  id="pyB"
+                  gradientUnits="userSpaceOnUse"
+                  x1="72.449"
+                  y1="83.456"
+                  x2="72.449"
+                  y2="22.131"
+                  gradientTransform="matrix(1 0 0 -1 0 128)"
+                >
+                  <stop offset="0" stop-color="#FFE052" />
+                  <stop offset="1" stop-color="#FFC331" />
+                </linearGradient>
+                <path
+                  fill="url(#pyB)"
+                  d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"
+                />
+              </svg>
+            </div>
+            <span class="skill-name">Python</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll" data-tilt>
+            <div class="skill-icon" style="--accent: #00599c">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#659AD2"
+                  d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"
+                />
+                <path
+                  fill="#00599C"
+                  d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"
+                />
+                <path
+                  fill="#fff"
+                  d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"
+                />
+                <g fill="#fff">
+                  <path
+                    d="M100.9 61.7v-5.7h-5.7V50.3h-5.7v5.7h-5.7v5.7h5.7v5.7h5.7v-5.7z"
+                  />
+                  <path
+                    d="M119 61.7v-5.7h-5.7V50.3h-5.7v5.7h-5.7v5.7h5.7v5.7h5.7v-5.7z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <span class="skill-name">C++</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-label animate-on-scroll">
+          <span class="label-number">03.</span> Contact
+        </h2>
+        <h3 class="section-heading animate-on-scroll">
+          Get in Touch
+        </h3>
+        <div class="contact-grid">
+          <div class="contact-info animate-on-scroll">
+            <h4 class="contact-info-title">
+              Let's create something <span class="gradient-text">extraordinary</span> together.
+            </h4>
+            <p class="contact-info-text">
+              I'm always open to discussing new opportunities, open-source projects, or tech collaborations. Have a question or just want to say hi? Drop me a message!
+            </p>
+            <div class="contact-details">
+              <a href="mailto:adityapatel9950@gmail.com" class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="ph ph-envelope-simple"></i>
+                </div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-value">adityapatel9950@gmail.com</span>
+                </div>
+              </a>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="ph ph-map-pin"></i>
+                </div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-value">India</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-socials-wrapper">
+              <span class="contact-socials-label">Connect with me</span>
+              <div class="contact-socials">
+                <a
+                  href="https://github.com/adityapatel9950/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-icon"
+                  aria-label="GitHub"
+                >
+                  <i class="ph ph-github-logo"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/adityapatel-cs/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-icon"
+                  aria-label="LinkedIn"
+                >
+                  <i class="ph ph-linkedin-logo"></i>
+                </a>
+                <a
+                  href="https://leetcode.com/u/adityapatel-cs/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-icon"
+                  aria-label="LeetCode"
+                >
+                  <svg
+                    class="social-svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://x.com/adityypatel/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-icon"
+                  aria-label="X / Twitter"
+                >
+                  <svg
+                    class="social-svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/adityypatel/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-icon"
+                  aria-label="Instagram"
+                >
+                  <i class="ph ph-instagram-logo"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contact-form animate-on-scroll"
+            id="contactForm"
+            action="https://formsubmit.co/adityapatel9950@gmail.com"
+            method="POST"
+          >
+            <!-- FormSubmit settings -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Message — Aditya Patel"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <!-- Honeypot spam protection -->
+            <input
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+              style="display:none"
+            />
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" "
+                minlength="2"
+                maxlength="60"
+                autocomplete="name"
+                required
+              />
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" "
+                maxlength="120"
+                autocomplete="email"
+                required
+              />
+              <label for="email">Your Email</label>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                minlength="10"
+                maxlength="1000"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <!-- Status message -->
+            <div
+              class="form-status"
+              id="formStatus"
+              role="alert"
+              aria-live="polite"
+            ></div>
+
+            <button
+              type="submit"
+              class="btn btn-primary btn-full"
+              id="submitBtn"
+            >
+              <span class="btn-content" id="btnContent">
+                <i class="ph ph-paper-plane-tilt"></i>
+                Send Message
+              </span>
+
+              <span class="btn-loading" id="btnLoading" aria-hidden="true">
+                <span class="loading-spinner"></span>
+                Sending...
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p class="footer-text">
+          Designed & Built by <span class="gradient-text">Aditya Patel</span>
+        </p>
+        <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
