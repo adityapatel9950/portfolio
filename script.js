@@ -3,28 +3,6 @@
    ============================================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // ─────────── CURSOR GLOW ───────────
-  const cursorGlow = document.getElementById("cursorGlow");
-  let mouseX = 0,
-    mouseY = 0,
-    glowX = 0,
-    glowY = 0;
-
-  if (cursorGlow) {
-    document.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    function animateGlow() {
-      glowX += (mouseX - glowX) * 0.08;
-      glowY += (mouseY - glowY) * 0.08;
-      cursorGlow.style.left = glowX + "px";
-      cursorGlow.style.top = glowY + "px";
-      requestAnimationFrame(animateGlow);
-    }
-    animateGlow();
-  }
 
   // ─────────── NAVBAR SCROLL ───────────
   const navbar = document.getElementById("navbar");
